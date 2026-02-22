@@ -23,6 +23,12 @@ GitHubの基本から実践までを学ぶ、全10回（準備編＋ワークシ
 | 8 | Security DeepDive | [ja/08-security.md](ja/08-security.md) |
 | 9 | Administration DeepDive | [ja/09-administration.md](ja/09-administration.md) |
 
+### 📎 補助資料
+
+| 資料 | ファイル |
+|------|---------|
+| ツールガイド：GitHub Desktop & VS Code | [ja/tool-guide.md](ja/tool-guide.md) |
+
 ---
 
 ## 🗺️ 学習の流れ

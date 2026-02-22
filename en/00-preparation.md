@@ -164,6 +164,72 @@ Using GitHub makes many previously manual tasks much more efficient:
 | Code review | Print and review on paper | Online review with Pull Requests |
 | Testing & builds | Run manually | Automate with GitHub Actions |
 
+### 3.5 DevOps and DevSecOps
+
+Building on the development cycle, **DevOps** and **DevSecOps** take collaboration and automation even further.
+
+#### What is DevOps?
+
+DevOps combines **Development (Dev)** and **Operations (Ops)**. It's a culture and set of practices where development and operations teams work closely together to **continuously and rapidly** build, test, release, and operate software.
+
+```
+   Dev                   Ops
+ ┌──────────┐      ┌──────────┐
+ │ Plan      │      │ Deploy    │
+ │ Code      │ ───▶ │ Monitor   │
+ │ Build     │ ◀─── │ Feedback  │
+ │ Test      │      │ Operate   │
+ └──────────┘      └──────────┘
+       ↑                 │
+       └── Continuous ───┘
+           Improvement
+```
+
+Key pillars of DevOps:
+
+| Pillar | Description |
+|--------|-------------|
+| **CI (Continuous Integration)** | Frequently merge code changes and automatically build & test |
+| **CD (Continuous Delivery / Deployment)** | Automatically prepare (or deploy) tested code to production |
+| **IaC (Infrastructure as Code)** | Manage infrastructure configuration as code for reproducibility and automation |
+| **Monitoring** | Monitor systems after release to detect issues early |
+
+#### What is DevSecOps?
+
+DevSecOps integrates **Security (Sec)** into the DevOps approach. Security is considered at **every stage** of the development cycle — not just at the end.
+
+```
+        DevSecOps
+┌───────────────────────────┐
+│     Dev + Sec + Ops       │
+│                           │
+│  Plan    ← Security reqs  │
+│  Code    ← Secure coding  │
+│  Build   ← Dependency scan│
+│  Test    ← Security tests │
+│  Release ← Vuln checks    │
+│  Operate ← Monitoring &   │
+│             Incident resp. │
+└───────────────────────────┘
+```
+
+> 💡 The core idea of DevSecOps is **"Security is not an afterthought — it's built in from the start."** This approach is known as **"Shift Left."**
+
+#### GitHub and DevOps / DevSecOps
+
+GitHub provides a rich set of features to support DevOps and DevSecOps practices:
+
+| DevOps / DevSecOps Practice | GitHub Feature |
+|-----------------------------|----------------|
+| CI/CD | GitHub Actions |
+| Code review | Pull Requests |
+| Security scanning | Dependabot, Code Scanning, Secret Scanning |
+| IaC management | Version-control infrastructure code in Repositories |
+| Monitoring integration | GitHub Actions + external monitoring tools |
+| Security policies | Branch Protection Rules, CODEOWNERS |
+
+> 📝 In this workshop series, Workshop 5 (GitHub Actions) covers CI/CD, and Workshop 8 (Security) dives deeper into DevSecOps practices.
+
 ---
 
 ## Part 4: Git Basics (15 min)

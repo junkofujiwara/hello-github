@@ -298,6 +298,33 @@ git pull origin main
 - Issue templates and labels
 - Milestone management
 
+### 💡 GitHub Copilot: AI-Powered Development
+
+Although we didn't cover it in today's workshop, GitHub offers an AI assistant called **GitHub Copilot** that can help at every stage of the development cycle.
+
+#### What is GitHub Copilot?
+
+GitHub Copilot is an **AI-powered coding assistant**. It provides code auto-completion, chat-based Q&A, code explanations, and fix suggestions — significantly boosting developer productivity.
+
+#### How Copilot Fits into the Development Cycle
+
+| Development Phase | Copilot Use Case |
+|-------------------|-----------------|
+| **Plan (Issue)** | Help draft Issue descriptions and templates |
+| **Develop (Coding)** | Code completion, function generation, refactoring suggestions |
+| **Review (PR)** | Auto-generate Pull Request summaries, assist code review |
+| **Test (Actions)** | Auto-generate test code |
+| **Documentation** | Auto-generate comments and documentation |
+
+#### Key Copilot Features
+
+- **Copilot Code Completion** — Real-time code suggestions in your editor
+- **Copilot Chat** — Ask questions about code in natural language
+- **Copilot Agent** — An AI agent that autonomously handles complex tasks (e.g., resolving Issues, multi-file edits)
+- **Copilot for Pull Requests** — Auto-generate PR summaries
+
+> 📝 We'll dive deeper into GitHub Copilot in Workshop 6. For now, just remember that **AI can support you throughout the entire development cycle**.
+
 ### Upcoming DeepDive Workshops
 
 | Workshop | Theme | Topics |

@@ -23,6 +23,12 @@ Both **Windows** and **Mac** instructions are included in all materials.
 | 8 | Security DeepDive | [en/08-security.md](en/08-security.md) |
 | 9 | Administration DeepDive | [en/09-administration.md](en/09-administration.md) |
 
+### 📎 Supplementary Materials
+
+| Resource | File |
+|----------|------|
+| Tool Guide: GitHub Desktop & VS Code | [en/tool-guide.md](en/tool-guide.md) |
+
 ---
 
 ## 🗺️ Learning Path
