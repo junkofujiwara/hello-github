@@ -156,12 +156,22 @@ main ──────●──────●──────────●
 feature/xxx ────────●──●───  (working branch)
 ```
 
+#### ⌨️ Using the Command Line
+
 ```bash
 # Create and switch to a new branch
 git checkout -b feature/add-index-html
 ```
 
-> 💡 The naming convention `feature/description` is a common branch naming pattern.
+#### 🖥️ Using VS Code
+
+1. Open the cloned folder in VS Code (**File** → **Open Folder**)
+2. Click the branch name (`main`) at the bottom left of the window
+3. Select **Create new branch**
+4. Type `feature/add-index-html` and press **Enter**
+
+> 💡 The naming convention `feature/description` is a common branch naming pattern.  
+> For more details on VS Code Git operations, see the [Tool Guide](tool-guide.md).
 
 ### 3.2 Create a File
 
@@ -204,7 +214,32 @@ cat << 'EOF' > index.html
 EOF
 ```
 
+#### 🖥️ Using VS Code
+
+1. In the Explorer sidebar, click the **New File** icon (📄+) next to the project name
+2. Name the file `index.html`
+3. Paste the following content:
+
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hello GitHub</title>
+</head>
+<body>
+    <h1>Hello, GitHub!</h1>
+    <p>This is my first page managed with GitHub.</p>
+</body>
+</html>
+```
+
+4. Save with **Ctrl+S** (Mac: **Cmd+S**)
+
 ### 3.3 Commit and Push
+
+#### ⌨️ Using the Command Line
 
 ```bash
 # Check status
@@ -219,6 +254,14 @@ git commit -m "Add index.html #1"
 # Push
 git push origin feature/add-index-html
 ```
+
+#### 🖥️ Using VS Code
+
+1. Click the **Source Control** icon (branch symbol) in the left sidebar
+2. Click the **+** next to `index.html` to stage it
+3. Type `Add index.html #1` in the message box at the top
+4. Click the **✓ (Commit)** button
+5. Click **… (menu)** → **Push** (or click **Sync Changes**)
 
 > 💡 Including `#1` in the commit message links it to Issue #1.
 
