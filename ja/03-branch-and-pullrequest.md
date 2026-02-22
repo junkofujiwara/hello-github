@@ -154,6 +154,85 @@ git fetch origin
 git fetch --prune       # 削除されたリモートブランチの参照を掃除
 ```
 
+### ✅ ハンズオン：ブランチ操作を練習
+
+```bash
+# ブランチを作成
+git checkout -b feature/add-style
+
+# CSS ファイルを作成
+# （以下の OS 別コマンドを使用）
+```
+
+#### 🪟 Windows (PowerShell)
+
+```powershell
+@"
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6f8fa;
+    color: #24292f;
+}
+
+h1 {
+    color: #0969da;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 8px;
+}
+"@ | Out-File -FilePath "style.css" -Encoding utf8
+```
+
+#### 🍎 Mac (ターミナル)
+
+```bash
+cat << 'EOF' > style.css
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f6f8fa;
+    color: #24292f;
+}
+
+h1 {
+    color: #0969da;
+    border-bottom: 1px solid #d0d7de;
+    padding-bottom: 8px;
+}
+EOF
+```
+
+#### 共通ステップ
+
+```bash
+git add style.css
+git commit -m "Add stylesheet"
+git push origin feature/add-style
+```
+
+#### 💻 VS Code で操作する場合
+
+コマンドに慣れていない場合は、VS Code の GUI で同じ操作ができます。
+
+1. **ブランチを作成**
+   - 左下のブランチ名（`main`）をクリック
+   - 「**新しいブランチの作成...**」を選択
+   - `feature/add-style` と入力して Enter
+
+2. **CSS ファイルを作成**
+   - エクスプローラーでフォルダを右クリック →「**新しいファイル**」
+   - ファイル名を `style.css` にして、上記の CSS コードを貼り付けて保存
+
+3. **コミット & プッシュ**
+   - サイドバーの「**ソース管理**」アイコン（🔀）をクリック
+   - `style.css` の横の **＋** をクリックしてステージング
+   - メッセージ欄に `Add stylesheet` と入力
+   - 「**コミット**」→「**同期（Push）**」
+
 ---
 
 ## Part 2：Pull Request DeepDive（20分）
@@ -376,6 +455,19 @@ git commit -m "コンフリクトを解決"
 git push origin feature/add-profile
 ```
 
+#### 💻 VS Code でコンフリクトを解決する場合
+
+VS Code はコンフリクトの解決に非常に便利なエディタです。
+
+1. ソース管理ビューでコンフリクトのあるファイルを開く
+2. コンフリクト箇所が色分けされ、以下のボタンが表示される：
+   - **Accept Current Change** — 自分の変更を採用
+   - **Accept Incoming Change** — 相手（main）の変更を採用
+   - **Accept Both Changes** — 両方を残す
+   - **Compare Changes** — 差分を並べて比較
+3. 正しい内容に修正したら、ファイルを保存
+4. ソース管理ビューで **＋** をクリックしてステージング → コミット
+
 > 💡 GitHub上でもシンプルなコンフリクトは解決できます。PR画面で **Resolve conflicts** ボタンを使います。
 
 ---
@@ -431,10 +523,26 @@ git commit -m "フッター付きのindex.htmlを追加 #Issue番号"
 git push origin feature/add-footer
 ```
 
+**💻 VS Code で操作する場合：**
+
+1. 左下のブランチ名をクリック →「**新しいブランチの作成...**」→ `feature/add-footer` と入力
+2. エクスプローラーで「**新しいファイル**」→ `index.html` を作成し、上記の HTML を貼り付けて保存
+3. サイドバーの「**ソース管理**」→ `index.html` の **＋** をクリック → メッセージに `フッター付きのindex.htmlを追加 #Issue番号` と入力 →「**コミット**」→「**同期（Push）**」
+
 #### Step 3：Pull Requestを作成
 
 - PRテンプレートに沿って記入
 - `Closes #Issue番号` を含める
+
+**💻 VS Code で操作する場合：**
+
+VS Code の GitHub Pull Requests 拡張機能がインストールされていれば：
+1. サイドバーの「**GitHub Pull Request**」アイコンをクリック
+2. 「**Create Pull Request**」をクリック
+3. タイトルと本文を入力し、`Closes #Issue番号` を記載
+4. 「**Create**」で作成
+
+> 💡 拡張機能がなくても、ブラウザで GitHub を開けば同じ操作ができます。
 
 #### Step 4：コードレビュー
 

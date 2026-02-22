@@ -214,6 +214,25 @@ git commit -m "Add stylesheet"
 git push origin feature/add-style
 ```
 
+#### 💻 Using VS Code Instead
+
+If you're not comfortable with the command line, you can do the same thing in VS Code:
+
+1. **Create a branch**
+   - Click the branch name (`main`) in the bottom-left corner
+   - Select "**Create new branch...**"
+   - Type `feature/add-style` and press Enter
+
+2. **Create the CSS file**
+   - Right-click in the Explorer → "**New File**"
+   - Name it `style.css`, paste the CSS code above, and save
+
+3. **Commit & Push**
+   - Click the "**Source Control**" icon (🔀) in the sidebar
+   - Click **＋** next to `style.css` to stage it
+   - Enter `Add stylesheet` as the commit message
+   - Click "**Commit**" → "**Sync Changes (Push)**"
+
 ---
 
 ## Part 2: Pull Request Deep Dive (20 min)
@@ -435,6 +454,19 @@ git commit -m "Resolve conflict"
 git push origin feature/add-profile
 ```
 
+#### 💻 Resolving Conflicts in VS Code
+
+VS Code provides an excellent built-in merge conflict editor:
+
+1. Open the conflicting file from the Source Control view
+2. Conflict sections are color-coded with action buttons:
+   - **Accept Current Change** — keep your changes
+   - **Accept Incoming Change** — keep the other branch's changes
+   - **Accept Both Changes** — keep both
+   - **Compare Changes** — view a side-by-side diff
+3. Edit the file to the correct content and save
+4. In the Source Control view, click **＋** to stage the file → Commit
+
 > 💡 Simple conflicts can also be resolved on GitHub. Use the **Resolve conflicts** button on the PR page.
 
 ---
@@ -490,10 +522,26 @@ git commit -m "Add index.html with footer #IssueNumber"
 git push origin feature/add-footer
 ```
 
+**💻 Using VS Code Instead:**
+
+1. Click the branch name in the bottom-left → "**Create new branch...**" → type `feature/add-footer`
+2. In the Explorer, create a "**New File**" → name it `index.html`, paste the HTML above, and save
+3. In "**Source Control**" → click **＋** next to `index.html` → enter `Add index.html with footer #IssueNumber` as the commit message → "**Commit**" → "**Sync Changes (Push)**"
+
 #### Step 3: Create a Pull Request
 
 - Fill in the PR template
 - Include `Closes #IssueNumber`
+
+**💻 Using VS Code Instead:**
+
+If you have the GitHub Pull Requests extension installed:
+1. Click the "**GitHub Pull Request**" icon in the sidebar
+2. Click "**Create Pull Request**"
+3. Enter a title and description, including `Closes #IssueNumber`
+4. Click "**Create**"
+
+> 💡 You can also create a PR in the browser by opening your repository on GitHub.
 
 #### Step 4: Code Review
 

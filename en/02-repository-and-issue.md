@@ -164,24 +164,6 @@ Go to the **Settings** tab to configure key options:
 | **Public** | Anyone can view | Open source, learning projects |
 | **Private** | Invited members only | Company projects, personal projects |
 
-### 1.6 LICENSE
-
-A license defines how others can use your code.
-
-| License | Feature | Use Case |
-|---------|---------|----------|
-| **MIT** | Very permissive | Most open-source projects |
-| **Apache 2.0** | Patent protection | Enterprise projects |
-| **GPL v3** | Copyleft (derivatives must be open) | Strong open-source projects |
-| **No License** | All rights reserved | Private/proprietary code |
-
-#### Adding a LICENSE
-
-1. On the repository page → **Add file** → **Create new file**
-2. Enter `LICENSE` as the filename
-3. Click **Choose a license template** (appears on the right)
-4. Select a template → **Review and submit**
-
 ### ✅ Hands-on: Improve Your Repository
 
 Add the following to the repository you created in Workshop 1:
