@@ -28,6 +28,7 @@ GitHubの基本から実践までを学ぶ、全10回（準備編＋ワークシ
 | 資料 | ファイル |
 |------|---------|
 | ツールガイド：GitHub Desktop & VS Code | [ja/tool-guide.md](ja/tool-guide.md) |
+| 番外編：プラットフォーム用語集（GitHub vs GitLab vs Bitbucket vs Azure DevOps） | [ja/platform-glossary.md](ja/platform-glossary.md) |
 | 番外編：GitHub Actions で Azure にデプロイ | [ja/azure-deploy-scenario.md](ja/azure-deploy-scenario.md) |
 | 番外編：GitHub Actions で AWS にデプロイ | [ja/aws-deploy-scenario.md](ja/aws-deploy-scenario.md) |
 

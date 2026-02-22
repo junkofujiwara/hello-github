@@ -28,6 +28,7 @@ Both **Windows** and **Mac** instructions are included in all materials.
 | Resource | File |
 |----------|------|
 | Tool Guide: GitHub Desktop & VS Code | [en/tool-guide.md](en/tool-guide.md) |
+| Platform Glossary: GitHub vs GitLab vs Bitbucket vs Azure DevOps | [en/platform-glossary.md](en/platform-glossary.md) |
 | Bonus: Deploy to Azure with GitHub Actions | [en/azure-deploy-scenario.md](en/azure-deploy-scenario.md) |
 | Bonus: Deploy to AWS with GitHub Actions | [en/aws-deploy-scenario.md](en/aws-deploy-scenario.md) |
 
